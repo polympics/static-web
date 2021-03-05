@@ -13,7 +13,7 @@ function render(srcPath, destPath, context) {
 
 function renderFolder(folder) {
     const srcPath = `src/templates/${folder}`;
-    const destPath = `docs/${folder}`;
+    const destPath = `out/${folder}`;
     if (!fs.existsSync(destPath)) fs.mkdirSync(destPath, { recursive: true });
     const files = fs.readdirSync(srcPath);
     for (const file of files) {
