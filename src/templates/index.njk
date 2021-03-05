@@ -1,0 +1,56 @@
+{% extends 'src/templates/root.njk' %}
+
+{% block head %}
+  <title>Home - Polympics</title>
+  <meta name="description" content="Polympics: A worldwide event to bring the Polytopia community together for a summer of fun! Represent your country, city or state in a wide variety of Polytopia challenges, including gameplay, art and more!"/>
+  <meta name="og:title" content="Polympics"/>
+  <meta name="og:image" content="{{ host }}/img/logo.png"/>
+  <meta name="og:description" content="Polympics: A worldwide event to bring the Polytopia community together for a summer of fun! Represent your country, city or state in a wide variety of Polytopia challenges, including gameplay, art and more!"/>
+  <link rel="stylesheet" href="/css/index.css">
+{% endblock %}
+
+{% block body %}
+  <main class="main main--centered">
+    <section class="page_intro page_intro--centered">
+      <img src="/img/logo.png" alt="PolyChampions Logo" class="page_intro__icon"/>
+      <h1 class="page_intro__header">Polympics</h1>
+      <p class="page_intro__slogan">A worldwide event to bring the Polytopia community together for a summer of fun!</p>
+    </section>
+    <a class="card_item" href="/signup">
+      <div class="card_item__content_wrapper">
+        <h2 class="card_item__header">Sign up</h2>
+        <p class="card_item__content">
+          Put your name down to represent your country, city or state in a summer of competetive Polytopia fun!
+        </p>
+      </div>
+      <i class="fas fa-arrow-right card_item__arrow"></i>
+    </a>
+    <a class="card_item" href="/about">
+      <div class="card_item__content_wrapper">
+        <h2 class="card_item__header">Read all about it</h2>
+        <p class="card_item__content">
+          Read and understand the nitty-gritty details behind the event.
+        </p>
+      </div>
+      <i class="fas fa-arrow-right card_item__arrow"></i>
+    </a>
+    <a class="card_item" href="https://discord.gg/HYnQQdJFeP">
+      <div class="card_item__content_wrapper">
+        <h2 class="card_item__header">Join the community</h2>
+        <p class="card_item__content">
+          Join our Discord server, where you can connect with other players and ask all the questions you need to about the event.
+        </p>
+      </div>
+      <i class="fas fa-arrow-right card_item__arrow"></i>
+    </a>
+    <a class="card_item" href="/events">
+      <div class="card_item__content_wrapper">
+        <h2 class="card_item__header">See the events</h2>
+        <p class="card_item__content">
+          We have an event to suit everyone and the Polympics. View the full list here.
+        </p>
+      </div>
+      <i class="fas fa-arrow-right card_item__arrow"></i>
+    </a>
+  </main>
+{% endblock %}

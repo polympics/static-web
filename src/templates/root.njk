@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/root.css">
+  <script src="https://kit.fontawesome.com/84d9aa7337.js" crossorigin="anonymous"></script>
+  <meta name="og:type" content="article"/>
+  <meta name="og:url" content="{{ url }}"/>
+  <link rel="icon" href="/img/icon.png">
+  {% block head %}{% endblock %}
+</head>
+<body>
+  <nav class="navbar">
+    <a href="/" class="navbar__link navbar__link--home">
+      <img src="/img/icon.png" alt="Polympics Logo" class="navbar__link__icon"/>
+      <span class="navbar__link__text">Polympics</span>
+    </a>
+    <a href="/events" class="navbar__link">Events</a>
+    <a href="/teams" class="navbar__link">Teams</a>
+    <a href="/about" class="navbar__link">About</a>
+  </nav>
+
+  {% block body %}{% endblock %}
+
+  <footer class="footer">
+    Polympics website, by Artemis.<br><br>
+    This site is still in beta, so expect to see links that don't lead anywhere and placeholder content.<br><br>
+    <a href="https://discord.gg/HYnQQdJFeP">Join now on Discord!</a>
+  </footer>
+
+</body>
+</html>
