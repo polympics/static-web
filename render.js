@@ -22,4 +22,10 @@ function renderFolder(folder) {
     }
 }
 
+function writeSpecial() {
+    fs.writeFileSync('out/CNAME', 'polympics.polytopia.win');
+    fs.writeFileSync('out/.nojekyll', '');
+}
+
 renderFolder('');
+writeSpecial();
