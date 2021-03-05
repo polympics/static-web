@@ -2,7 +2,7 @@
 const nunjucks = require('nunjucks');
 const fs = require('fs');
 
-const HOST = 'https://polympics.polytopia.win';
+const HOST = 'https://polytopia.fun';
 
 function render(srcPath, destPath, context) {
     context.url = `${HOST}/${destPath}`;
@@ -23,7 +23,7 @@ function renderFolder(folder) {
 }
 
 function writeSpecial() {
-    fs.writeFileSync('out/CNAME', 'polympics.polytopia.win');
+    fs.writeFileSync('out/CNAME', 'polytopia.fun');
     fs.writeFileSync('out/.nojekyll', '');
 }
 
