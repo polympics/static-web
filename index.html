@@ -1,15 +1,35 @@
-{% extends 'src/templates/root.njk' %}
-
-{% block head %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/root.css">
+  <script src="https://kit.fontawesome.com/84d9aa7337.js" crossorigin="anonymous"></script>
+  <meta name="og:type" content="article"/>
+  <meta name="og:url" content="https://polytopia.fun/out//index"/>
+  <link rel="icon" href="/img/icon.png">
+  
   <title>Home - Polympics</title>
   <meta name="description" content="Polympics: A worldwide event to bring the Polytopia community together for a summer of fun! Represent your country, city or state in a wide variety of Polytopia challenges, including gameplay, art and more!"/>
   <meta name="og:title" content="Polympics"/>
-  <meta name="og:image" content="{{ host }}/img/logo.png"/>
+  <meta name="og:image" content="https://polytopia.fun/img/logo.png"/>
   <meta name="og:description" content="Polympics: A worldwide event to bring the Polytopia community together for a summer of fun! Represent your country, city or state in a wide variety of Polytopia challenges, including gameplay, art and more!"/>
   <link rel="stylesheet" href="/css/index.css">
-{% endblock %}
 
-{% block body %}
+</head>
+<body>
+  <nav class="navbar">
+    <a href="/" class="navbar__link navbar__link--home">
+      <img src="/img/icon.png" alt="Polympics Logo" class="navbar__link__icon"/>
+      <span class="navbar__link__text">Polympics</span>
+    </a>
+    <a href="/events" class="navbar__link">Events</a>
+    <a href="/teams" class="navbar__link">Teams</a>
+    <a href="/about" class="navbar__link">About</a>
+  </nav>
+
+  
   <main class="main main--centered">
     <section class="page_intro page_intro--centered">
       <img src="/img/logo.png" alt="PolyChampions Logo" class="page_intro__icon"/>
@@ -53,4 +73,13 @@
       <i class="fas fa-arrow-right card_item__arrow"></i>
     </a>
   </main>
-{% endblock %}
+
+
+  <footer class="footer">
+    Polympics website, by Artemis.<br><br>
+    This site is still in beta, so expect to see links that don't lead anywhere and placeholder content.<br><br>
+    <a href="https://discord.gg/HYnQQdJFeP">Join now on Discord!</a>
+  </footer>
+
+</body>
+</html>

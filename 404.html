@@ -7,9 +7,15 @@
   <link rel="stylesheet" href="/css/root.css">
   <script src="https://kit.fontawesome.com/84d9aa7337.js" crossorigin="anonymous"></script>
   <meta name="og:type" content="article"/>
-  <meta name="og:url" content="{{ url }}"/>
+  <meta name="og:url" content="https://polytopia.fun/out//404"/>
   <link rel="icon" href="/img/icon.png">
-  {% block head %}{% endblock %}
+  
+  <title>404 - Polympics</title>
+  <meta name="description" content="That link doesn't look right."/>
+  <meta name="og:title" content="Error: 404 - Polympics"/>
+  <meta name="og:image" content="https://polytopia.fun/img/logo.png"/>
+  <meta name="og:description" content="That link doesn't look right."/>
+
 </head>
 <body>
   <nav class="navbar">
@@ -22,7 +28,17 @@
     <a href="/about" class="navbar__link">About</a>
   </nav>
 
-  {% block body %}{% endblock %}
+  
+  <main class="main main--centered">
+    <section class="page_intro page_intro--centered">
+      <i class="fas fa-search page_intro__icon"></i>
+      <h1 class="page_intro__header">404 Error</h1>
+      <p class="page_intro__description">
+        Couldn't find that page.
+      </p>
+    </section>
+  </main>
+
 
   <footer class="footer">
     Polympics website, by Artemis.<br><br>
